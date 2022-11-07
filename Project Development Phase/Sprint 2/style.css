@@ -1,0 +1,80 @@
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: grey;
+}
+
+.active {
+  background-color: black;
+}
+
+
+
+.login{
+
+    border:1px solid;
+    border-color:grey;
+    width:370px;
+    height:450px;
+}
+
+img{
+ height:90px;
+    width:90px;
+}
+
+img{
+   position:relative;
+   left:134px;
+   top:30px;
+}
+
+.input{
+    width:80%;
+    margin-left:10%;
+    margin-top:17%;
+}
+
+.input-one{
+    width:80%;
+    margin-left:10%;
+    margin-top:6%;
+}
+
+.button{
+    width:80%;
+    margin-top:7%;
+    margin-left:10%;
+}
+
+.page{
+    margin-left:10%;
+}
+
+h6{
+    margin-top:20px;
+    text-align:center;
+}
+
+.login{
+  margin:auto;
+  margin-top:75px;
+}

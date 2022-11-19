@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Prediciton </title>
+    <link href="../static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../static/css/prediction.css" rel="stylesheet">
+</head>
+<body class="text-center">
+    
+    <div id="page">
+        <div class="navbar navbar-dark bg-dark">
+            <a class="navbar-brand" href="index"> Diabetic Retinopathy Classification </a>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index"> Home </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="logout"> Logout </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <form action="{{ url_for('predict') }}" method="POST" enctype="multipart/form-data">
+    <div id="formContainer">
+        <label for="formFile" class="form-label"> Please select an retina image in a formate of .png , .jpg , .jpeg </label>
+        <input class="form-control" id="formFile" type="file" name="image"/>
+        <button class="btn btn-md btn-secondary" id="subBtn" type="submit" value="predict" onload="color()"> Submit </button>
+        <p> The result will be shown below once the image is uploaded </p>
+        <h3 id="result" {{color}} value="{{ pred }}"> {{ pred }} </h3>
+    </div>
+    </form>
+    <img src="{{ url_for('static', filename='prediction.jpg') }}" alt="Diabetic Retinopathy Severity">
+
+</body>
+</html>

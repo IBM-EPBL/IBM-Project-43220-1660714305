@@ -1,0 +1,65 @@
+* {
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    background-color: rgb(190, 189, 189);
+}
+
+#page {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.navbar {
+    padding: 2rem;
+    box-shadow: 0 1px 50px black;
+}
+
+.navbar-brand {
+    padding-left: 1.5rem;
+}
+
+.navbar-nav {
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-item {
+    padding: 0rem 1.5rem;
+    text-shadow: 0 2px 20px white;
+}
+
+.form-signin {
+    width: 100%;
+    max-width: 330px;
+    padding: 15px;
+    margin: auto;
+}
+
+.form-floating {
+    margin: 1rem 0rem;
+}
+
+.form-signin .form-floating:focus-within {
+    z-index: 2;
+}
+
+.form-control {
+    border-radius: 8px;
+    background-color: #dbdbdb;
+    border: 0.1px solid grey;
+}
+
+.form-signin > button {
+    border-radius: 10px;
+}
+
+button:hover {
+    box-shadow: 0 1px 15px grey;
+}
